@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <section>
+        <h1 id="title">Formulario</h1>
+        <p id="description">Gracias por llenar este formulario</p>
+        <fieldset>
+            <form id="formulario">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad</label>
+                    <input type="number" name="edad" id="number" min="10" max="99" placeholder="Ingresa tu edad" required>
+                </div>
+                <div class="form-group">
+                    <p>¿Con cuál camino te identificas?</p>
+                    <select id="dropdown" name="camino" class="form-control" required>
+                        <option disabled selected value>Selecciona el camino</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>¿Recomendarias Academia Geek a un amigo?</p>
+                    <label> <input name="Recomendacion"value="definitivamente" type="radio" class="input-radio"checked/>definitivamente</label>
+                    <label> <input name="Recomendacion"value="Tal-vez" type="radio" class="input-radio"checked/>Tal vez</label>
+                    <label> <input name="Recomendacion"value="no-estoy-seguro" type="radio" class="input-radio"checked/>No estoy seguro</label>
+                </div>
+                <div class="form-group">
+                    <p>¿Qué tecnologias te gustan mas?
+                        <span class="clue">(Puedes seleccionar varias)</span>
+                    </p>
+                    <label><input name="prefer"value="front-end-projects"type="checkbox"class="input-checkbox"/>Bootstrap</label>
+                    <label><input name="prefer"value="front-end-projects"type="checkbox"class="input-checkbox"/>Vue</label>
+                    <label><input name="prefer"value="front-end-projects"type="checkbox"class="input-checkbox"/>React</label>
+                </div>
+                <div class="form-group">
+                    <p>Escriba aquí sus comentarios</p>
+                    <textarea id="commentarios" class="input-textarea" name="comentarios" placeholder="Escriba aquí sus comentarios..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</body>
+
+</html>
